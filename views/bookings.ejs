@@ -1,0 +1,28 @@
+<%# this is the passenger details form%>
+<% include partials/header.ejs  %>
+
+<h2>Ello, new flight!</h2>
+
+<form method="post" action="/bookings">
+  <div class="form-group">
+    <label for="flight-id">Flight Number</label>
+    <input type="text" class="form-control" id="flight-id" name="newDeathtrap[id]" placeholder="Enter your deathtrap ID">
+  </div>
+  <div class="form-group">
+    <label for="destination">Destination</label>
+    <input type="text" class="form-control" id="destination" name="newDeathtrap[destination]" placeholder="Where are you not going?">
+  </div>
+  <div class="form-group">
+    <label for="deptDate">Departure Date</label>
+    <input type="date" class="form-control" id="deptDate" name="newDeathtrap[deptDate]" placeholder="We try not to fly kite on this date">
+  </div>
+  <div class="form-group">
+    <label for="arrDate">Arrival Date</label>
+    <input type="date" class="form-control" id="arrDate" name="newDeathtrap[arrDate]" placeholder="Arrival? Optimistic siol">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<h4>SIALAH Airlines reserves all rights to suddenly change flight details such as dates and destinations. Take at your own risk.</h4>
+
+<% include partials/footer.ejs  %>
