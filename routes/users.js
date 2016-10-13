@@ -5,7 +5,6 @@ var router = express.Router()
 // All the GET requests
 router.get('/', function(req, res) {
   // all users view under INDEX.EJS
-  //NOTE: edited by kelvin - changed below to point to users.ejs under views folder. Please delete this note when resolving merge conflicts.
   res.render('users')
 }).get('/new', function(req, res) {
   // NEW route under NEW.EJS
